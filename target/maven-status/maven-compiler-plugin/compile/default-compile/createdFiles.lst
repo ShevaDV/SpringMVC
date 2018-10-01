@@ -1,0 +1,5 @@
+com\sdv\controller\UserController.class
+com\sdv\dao\UserDao.class
+com\sdv\service\UserService.class
+com\sdv\config\SpringConfig.class
+com\sdv\entity\User.class
