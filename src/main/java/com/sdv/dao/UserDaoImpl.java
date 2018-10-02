@@ -18,6 +18,11 @@ public class UserDaoImpl implements UserDao {
         this.jdbcTemplate = jdbcTemplate;
     }
 
+    public void save(User user) {
+        String sql = "INSERT INTO user (name) VALUES (?)";
+        jdbcTemplate.update(sql, user.getName());
+    }
+
     public List<User> getAll() {
         String sql = "SELECT * FROM user";
         return jdbcTemplate.query(sql, new UserMapper());
